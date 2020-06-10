@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iZIqxt+BRTeuFL9bQ/6zrfc8vpOm7dzF+sG6nSYZuBk04RpYau5djDYj1+x1SH5lFoKknn+O+uip2j3C31pwyQ==",
+  "success": true,
+  "projectFilePath": "E:\\BIS SCHOOL\\SUMMER 2020\\CIS174Advanced C#.NetCore\\Code\\WebTest\\WebTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MISTER TWOLE\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

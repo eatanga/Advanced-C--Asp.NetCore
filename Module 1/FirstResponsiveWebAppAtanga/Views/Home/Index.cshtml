@@ -1,0 +1,55 @@
+﻿@model FirstResponsiveWebAppAtanga.Models.AgeDisplayModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/popper.js/popper.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/custom.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="jumbotron">
+            <h1 class="text-center">
+                <span class="text-capitalize">Age Display</span>
+            </h1>
+        
+        </header>
+        <form id="form" asp-action="Index" method="post">
+            <div asp-validation-summary="All"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="form-age">
+                        <div>
+                            <label asp-for="Name" class="sr-only">Name:</label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter your name" />
+                        </div>
+                        <div>
+                            <label asp-for="BirthYear" class="sr-only">Year Of Birth:</label>
+                            <input asp-for="BirthYear" class="form-control" placeholder="Enter year of birth">
+                        </div>
+                        <div>
+                            <p> Your Name is: @ViewBag.Name</p>
+                            <p>Your age on December 31st will be: @ViewBag.FV.ToString() </p>
+                        </div>
+
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                        <a asp-action="Index" class="btn btn-lg btn-primary btn-block">Clear</a>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

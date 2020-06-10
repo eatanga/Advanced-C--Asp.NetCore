@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cis174EntityFrameworkDemo", "Cis174EntityFrameworkDemo.csproj", "{EAC5BC3D-FE6E-42B7-9523-1422C2D8649B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC5BC3D-FE6E-42B7-9523-1422C2D8649B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC5BC3D-FE6E-42B7-9523-1422C2D8649B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC5BC3D-FE6E-42B7-9523-1422C2D8649B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC5BC3D-FE6E-42B7-9523-1422C2D8649B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27E2264D-6160-45DD-8B50-B7525FF63731}
+	EndGlobalSection
+EndGlobal

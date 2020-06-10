@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ouNpQud9dsYyNxm7eVzoQxeHwvf6t1UdxPlyO0gfdCARLhOX8tyTIIG7ZNitOhy0Wcg20yeLLJ4eiDA39Qfu8Q==",
+  "success": true,
+  "projectFilePath": "E:\\BIS SCHOOL\\SUMMER 2020\\CIS174Advanced C#.NetCore\\Code\\MiddleWareSetup\\MiddleWareSetup.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MISTER TWOLE\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
