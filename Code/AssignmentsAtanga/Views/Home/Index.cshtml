@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "My Navigation Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/popper.js/popper.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/custom.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="jumbotron">
+            <h1 class="text-center">
+                <span class="text-capitalize">Atanga's Projects</span>
+            </h1>
+
+        </header>
+        <form id="form" asp-action="Index" method="post">
+            <table border="1">
+                <tr>
+                    <td>
+                        <b>Assignments</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Home Page", "Index", "Home", new { area = "Home" }, null)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Movie List Application", "Index", "Home", new { area = "MovieList" }, null)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Administrator", "Index", "Home", new { area = "Admin" }, null)
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

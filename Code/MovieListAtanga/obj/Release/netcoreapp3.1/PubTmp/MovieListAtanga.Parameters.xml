@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="MovieListAtanga" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\BIS\ SCHOOL\\SUMMER\ 2020\\CIS174Advanced\ C\#\.NetCore\\Code\\MovieListAtanga\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
