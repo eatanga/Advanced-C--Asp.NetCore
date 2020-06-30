@@ -1,3 +1,4 @@
+using AssignmentsAtanga.Areas.Assignments.Models;
 using AssignmentsAtanga.Areas.MovieList.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,6 +25,10 @@ namespace AssignmentsAtanga
 
             services.AddDbContext<MovieContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("MovieContext")));
+            
+            services.AddDbContext<StudentContext>(options => options.UseSqlServer(
+               Configuration.GetConnectionString("StudentContext")));
+
             services.AddRouting(options =>
             {
                 options.LowercaseUrls = true;
@@ -53,6 +58,12 @@ namespace AssignmentsAtanga
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
+
+                endpoints.MapControllerRoute(
+                   "areaRoute",
+                   pattern: "{area:exists}/{controller=Assignments}/{action=Index}/{id}/{slug?}");
+
                 endpoints.MapControllerRoute(
                    "areaRoute",
                    pattern: "{area:exists}/{controller=Reports}/{action=Index}/{id?}/{slug?}");

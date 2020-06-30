@@ -13,13 +13,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\Areas\MovieList\_ViewImports.cshtml"
-using AssignmentsAtanga.Areas.MovieList;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\Areas\MovieList\_ViewImports.cshtml"
 using AssignmentsAtanga.Areas.MovieList.Models;
 
@@ -27,7 +20,7 @@ using AssignmentsAtanga.Areas.MovieList.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Areas/MovieList/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b0d2299b28170b4320e1bd41f97aa03b7af1f47a", @"/Areas/MovieList/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"63429a3e4317c5a8762d723a101a147d173de6df", @"/Areas/MovieList/_ViewImports.cshtml")]
     public class Areas_MovieList__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
