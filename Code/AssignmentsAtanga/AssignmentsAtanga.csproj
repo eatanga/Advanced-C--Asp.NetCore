@@ -9,6 +9,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Assignments\Data\" />
     <Folder Include="Areas\MovieList\Data\" />
+    <Folder Include="Areas\Olympic\Data\" />
     <Folder Include="Areas\Reports\Data\" />
     <Folder Include="Areas\Reports\Models\" />
     <Folder Include="Areas\Users\Data\" />

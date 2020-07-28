@@ -1,5 +1,6 @@
 using AssignmentsAtanga.Areas.Assignments.Models;
 using AssignmentsAtanga.Areas.MovieList.Models;
+using AssignmentsAtanga.Areas.Olympic.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,10 @@ namespace AssignmentsAtanga
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddControllersWithViews();
 
             services.AddDbContext<MovieContext>(options => options.UseSqlServer(
@@ -28,6 +33,9 @@ namespace AssignmentsAtanga
             
             services.AddDbContext<StudentContext>(options => options.UseSqlServer(
                Configuration.GetConnectionString("StudentContext")));
+
+            services.AddDbContext<CountryContext>(options => options.UseSqlServer(
+               Configuration.GetConnectionString("CountryContext")));
 
             services.AddRouting(options =>
             {
@@ -54,11 +62,22 @@ namespace AssignmentsAtanga
 
             app.UseRouting();
 
+            app.UseSession();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
+                endpoints.MapControllerRoute(
+                    name: "",
+                    pattern: "{area:exists}/{controller=Olympic}/{action=Index}/game/{activeGame}/cat/{activeCat}");
+
+                endpoints.MapControllerRoute(
+                   "areaRoute",
+                   pattern: "{area:exists}/{controller=Olympic}/{action=Index}/{id}/{slug?}");
+              
 
                 endpoints.MapControllerRoute(
                    "areaRoute",

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AssignmentsAtanga.Areas.Assignments.Models
 {
-    public class Student
+    public class Student 
     {
 
         public int StudentId { get; set; }

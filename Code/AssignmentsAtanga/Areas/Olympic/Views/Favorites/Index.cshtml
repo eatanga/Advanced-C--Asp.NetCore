@@ -1,0 +1,48 @@
+﻿@model CountryListViewModel
+@{
+    ViewData["Title"] = "Favorites";
+    var session = new OlympicSession(Context.Session);   // get session
+}
+
+<div class="text-center">
+    <h2>@(session.GetName() == null ? "My" : session.GetName() + "'s") Favorites</h2>
+    <form asp-action="Delete" method="post">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary"
+           asp-route-activeConf="@Model.ActiveGame"
+           asp-route-activeDiv="@Model.ActiveCat">
+            Back to Home Page
+        </a>
+        <!-- add button to edit name -->
+        <a asp-action="Index" asp-controller="Name" class="btn btn-primary">
+            Change Name
+        </a>
+        <button type="submit" class="btn btn-primary">
+            Clear Favorites
+        </button>
+    </form>
+    <br />
+</div>
+
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <ul class="list-group">
+            @foreach (Country country in Model.Countries)
+            {
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="~/images/@country.photopath" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            @country.Name
+                        </div>
+                        <div class="col-sm-4">
+                            @country.Game.Name @country.Category.Name
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
