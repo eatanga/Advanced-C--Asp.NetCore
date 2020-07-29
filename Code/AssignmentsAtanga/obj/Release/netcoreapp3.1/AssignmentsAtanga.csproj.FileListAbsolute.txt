@@ -174,3 +174,7 @@ E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\R
 E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\Olympic\Views\Home\Details.cshtml.g.cs
 E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\Olympic\Views\Favorites\Index.cshtml.g.cs
 E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\Olympic\Views\Name\Index.cshtml.g.cs
+E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\TicketSystem\Views\Home\Add.cshtml.g.cs
+E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\TicketSystem\Views\Home\Index.cshtml.g.cs
+E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\TicketSystem\_ViewImports.cshtml.g.cs
+E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\obj\Release\netcoreapp3.1\Razor\Areas\TicketSystem\_ViewStart.cshtml.g.cs

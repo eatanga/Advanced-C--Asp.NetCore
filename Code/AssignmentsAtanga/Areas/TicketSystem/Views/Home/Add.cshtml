@@ -1,0 +1,52 @@
+﻿@model AssignmentsAtanga.Areas.TicketSystem.Models.TicketViewModel
+
+
+    <div class="container-fluid">
+        <header class="text-center text-white">
+            <h1 class="bg-primary mt-3 p-3">Rudimentary Ticketing System</h1>
+        </header>
+    </div>
+
+
+<h2>New Ticket</h2>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-action="Add" method="post">
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.Name">Ticket Name:</label>
+        <input type="text" asp-for="CurrentTicket.Name" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.Description">Description:</label>
+        <input type="text" asp-for="CurrentTicket.Description" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.SprintNumber">Sprint Number:</label>
+        <input type="text" asp-for="CurrentTicket.SprintNumber" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.PointValue">Point Value:</label>
+        <input type="text" asp-for="CurrentTicket.PointValue" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.StatusId">Status:</label>
+        <select asp-for="CurrentTicket.StatusId" class="form-control"
+                asp-items="@(new SelectList(Model.Statuses, "StatusId", "Name"))">
+            <option value=""></option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CurrentTicket.DueDate">Due Date:</label>
+        <input type="text" asp-for="CurrentTicket.DueDate" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>

@@ -1,6 +1,7 @@
 using AssignmentsAtanga.Areas.Assignments.Models;
 using AssignmentsAtanga.Areas.MovieList.Models;
 using AssignmentsAtanga.Areas.Olympic.Models;
+using AssignmentsAtanga.Areas.TicketSystem.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,9 @@ namespace AssignmentsAtanga
             services.AddDbContext<CountryContext>(options => options.UseSqlServer(
                Configuration.GetConnectionString("CountryContext")));
 
+            services.AddDbContext<TicketContext>(options => options.UseSqlServer(
+               Configuration.GetConnectionString("TicketContext")));
+
             services.AddRouting(options =>
             {
                 options.LowercaseUrls = true;
@@ -71,7 +75,12 @@ namespace AssignmentsAtanga
                 endpoints.MapControllers();
 
                 endpoints.MapControllerRoute(
-                    name: "",
+                   "areaRoute",
+                   pattern: "{area:exists}/{controller=TicketSystem}/{action=Index}/{id}/{slug?}");
+
+
+                endpoints.MapControllerRoute(
+                    name: "custom",
                     pattern: "{area:exists}/{controller=Olympic}/{action=Index}/game/{activeGame}/cat/{activeCat}");
 
                 endpoints.MapControllerRoute(
