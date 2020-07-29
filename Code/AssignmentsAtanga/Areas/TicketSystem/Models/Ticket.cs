@@ -13,7 +13,7 @@ namespace AssignmentsAtanga.Areas.TicketSystem.Models
         [Required(ErrorMessage = "Please enter a description.")]
         public string Description { get; set; }
 
-        [Required(ErrorMessage = "Please enter a due date.")]
+        [Required(ErrorMessage = "Please enter a due date. Format: MM/DD/YYYY")]
         public DateTime? DueDate { get; set; }
 
         [Required(ErrorMessage = "Please enter a sprintNumber")]
