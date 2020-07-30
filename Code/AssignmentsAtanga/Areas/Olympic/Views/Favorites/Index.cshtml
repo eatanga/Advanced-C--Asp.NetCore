@@ -1,23 +1,23 @@
 ﻿@model CountryListViewModel
 @{
-    ViewData["Title"] = "Favorites";
+    ViewData["Title"] = "Favorite Countries";
     var session = new OlympicSession(Context.Session);   // get session
 }
 
 <div class="text-center">
-    <h2>@(session.GetName() == null ? "My" : session.GetName() + "'s") Favorites</h2>
+    <h2>@(session.GetName() == null ? "My" : session.GetName() + "'s") Favorite Olympic Countries</h2>
     <form asp-action="Delete" method="post">
         <a asp-action="Index" asp-controller="Home" class="btn btn-primary"
-           asp-route-activeConf="@Model.ActiveGame"
-           asp-route-activeDiv="@Model.ActiveCat">
+           asp-route-activeCat="@Model.ActiveCat"
+           asp-route-activeGame="@Model.ActiveGame">
             Back to Home Page
         </a>
         <!-- add button to edit name -->
         <a asp-action="Index" asp-controller="Name" class="btn btn-primary">
-            Change Name
+            Change COuntry Name
         </a>
         <button type="submit" class="btn btn-primary">
-            Clear Favorites
+            Clear Favorite Countries
         </button>
     </form>
     <br />
