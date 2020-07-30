@@ -28,14 +28,14 @@ namespace AssignmentsAtanga.Areas.Olympic.Models
                 );
 
             modelBuilder.Entity<Country>().HasData(
-                    new  { CountryId = "can", Name = "Canada", GameId = "Winter", CategoryId = "indoor", photopath = "CAN.png" },
-                    new  { CountryId = "Swe", Name = "Sweden", GameId = "Winter", CategoryId = "indoor", photopath = "SWE.png" },
+                    new  { CountryId = "Can", Name = "Canada", GameId = "Winter", CategoryId = "indoor", photopath = "CAN.png" },
+                    new  { CountryId = "swe", Name = "Sweden", GameId = "Winter", CategoryId = "indoor", photopath = "SWE.png" },
                     new  { CountryId = "gb", Name = "Great Britain", GameId = "Winter", CategoryId = "indoor", photopath = "GB.png" },
                     new  { CountryId = "jam", Name = "Jamaica", GameId = "Winter", CategoryId = "outdoor", photopath = "JAM.png" },
                     new  { CountryId = "ita", Name = "Italy", GameId = "Winter", CategoryId = "outdoor", photopath = "ITA.png" },
                     new  { CountryId = "jap", Name = "Japan", GameId = "Winter", CategoryId = "outdoor", photopath = "JAP.png" },
                     new  { CountryId = "ger", Name = "Germany", GameId = "Summer ", CategoryId = "indoor", photopath = "GER.png" },
-                    new  { CountryId = "Chi", Name = "China", GameId = "Summer ", CategoryId = "indoor", photopath = "CHI.png" },
+                    new  { CountryId = "chi", Name = "China", GameId = "Summer ", CategoryId = "indoor", photopath = "CHI.png" },
                     new  { CountryId = "mex", Name = "Mexico", GameId = "Summer", CategoryId = "indoor", photopath = "MEX.png" },
                     new  { CountryId = "bra", Name = "Brazil", GameId = "Summer", CategoryId = "outdoor", photopath = "BRA.png" },
                     new  { CountryId = "neth", Name = "Netherlands", GameId = "Summer", CategoryId = "outdoor", photopath = "NETH.png" },
