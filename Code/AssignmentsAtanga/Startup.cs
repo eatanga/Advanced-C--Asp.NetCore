@@ -1,7 +1,9 @@
 using AssignmentsAtanga.Areas.Assignments.Models;
+using AssignmentsAtanga.Areas.Identity.Data;
 using AssignmentsAtanga.Areas.MovieList.Models;
 using AssignmentsAtanga.Areas.Olympic.Models;
 using AssignmentsAtanga.Areas.TicketSystem.Models;
+using AssignmentsAtanga.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +25,7 @@ namespace AssignmentsAtanga
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
+            services.AddRazorPages();
             services.AddMemoryCache();
             services.AddSession();
 
@@ -40,6 +42,14 @@ namespace AssignmentsAtanga
 
             services.AddDbContext<TicketContext>(options => options.UseSqlServer(
                Configuration.GetConnectionString("TicketContext")));
+
+            services.AddDbContext<AssignDbContext>(options => options.UseSqlServer(
+               Configuration.GetConnectionString("AssignDbContextConnection")));
+
+            //Indentification User
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<AssignDbContext>();
+
 
             services.AddRouting(options =>
             {
@@ -68,10 +78,13 @@ namespace AssignmentsAtanga
 
             app.UseSession();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
+
                 endpoints.MapControllers();
 
                 endpoints.MapControllerRoute(

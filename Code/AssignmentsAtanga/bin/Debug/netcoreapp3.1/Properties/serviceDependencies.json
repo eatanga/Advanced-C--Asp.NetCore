@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "TicketDbContextConnection"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "AssignContextConnection"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "AssignDbContextConnection"
+    }
+  }
+}

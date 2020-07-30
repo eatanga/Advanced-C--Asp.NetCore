@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql3": {
+      "restored": true,
+      "restoreTime": "2020-07-30T18:30:05.1960819Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "DMACC"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "6af58bf4-eb1b-436d-a84d-32d0af55f141"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using AssignmentsAtanga.Areas.TicketSystem.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

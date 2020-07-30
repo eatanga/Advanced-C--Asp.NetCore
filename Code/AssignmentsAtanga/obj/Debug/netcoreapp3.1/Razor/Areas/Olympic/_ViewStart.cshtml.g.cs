@@ -13,13 +13,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\Areas\Olympic\_ViewImports.cshtml"
-using AssignmentsAtanga.Areas.Olympic;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "E:\BIS SCHOOL\SUMMER 2020\CIS174Advanced C#.NetCore\Code\AssignmentsAtanga\Areas\Olympic\_ViewImports.cshtml"
 using AssignmentsAtanga.Areas.Olympic.Models;
 
@@ -27,7 +20,7 @@ using AssignmentsAtanga.Areas.Olympic.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Areas/Olympic/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fcf40d7d83c018791c4798f69140540cf3670d7c", @"/Areas/Olympic/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"efd2a1a53eefcf6f6b23c0cfd6da602b8205f282", @"/Areas/Olympic/_ViewImports.cshtml")]
     public class Areas_Olympic__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
